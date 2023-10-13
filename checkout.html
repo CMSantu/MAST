@@ -1,0 +1,149 @@
+ <!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All products - MAST online</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>       
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+               <a href="index.html"><img src="images/mast%20logo.png" width="260px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="product%20type.html">Products</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="Cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        </div> 
+        
+<!------------address page----------->
+        <div class="Address-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                    <img src="images/oth.jpg" width="100%">
+                    </div>
+                    
+                    <div class="col-2">
+                        <div class="cout-container">
+                            <form id="Address-form">
+                                <p>Enter your Details</p>
+                                <input type="text" placeholder="First Name">
+                                <input type="text" placeholder="Last Name">
+                                <p>Enter your Address</p>
+                                <input type="number" placeholder="House no">
+                                <input type="text" placeholder="Street/Colony/Village">
+                                <input type="text" placeholder="Taluk">
+                                <input type="text" placeholder="District">
+                                <input type="number" placeholder="Pin Code">
+                                <input type="number" placeholder="Contact Info">
+                                <button type="submit" class="btn">Confirm</button>
+                                <button type="text" class="btn">Cash on Delivery</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+<!-------------footer--------->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer col-1">
+                    <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                             <img src="images/play%20store%20logo.jpg">
+                             <img src="images/ios%20logo.jpg">
+                        </div>
+                    </div>
+                    <div class="footer col-2">
+                    <img src="images/mast%20logo.png">
+                        <p>Our Main Purpose is to Sustinably Make the Pleasure and<br>Benefits of Farm Vegetables and Quality Groceries to Many.</p>
+                    </div>
+                    <div class="footer col-3">
+                    <h3>Useful Links</h3>
+                        <ul>
+                           <li>Return policy</li>
+                           <li>E-Mail</li>
+                           <li>Help</li> 
+                        </ul>
+                    </div>
+                    <div class="footer col-4">
+                    <h3>Follow Us</h3>
+                        <ul>
+                           <li>Facebook</li>
+                           <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - CMGroups</p>
+            </div>
+        </div>
+        
+        
+        
+        
+<!-----------------js for toggle menu---------->
+        <script>
+        var MenuItems = document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight = "0px";
+            
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                    {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                else{
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+        <!-----------------js for toggle Form---------->
+        <script>
+            
+            var LoginForm = document.getElementById("LoginForm");
+            var RegForm = document.getElementById("RegForm");
+            var Indicator = document.getElementById("Indicator");
+            
+                 function register(){
+                     RegForm.style.transform = "translateX(0px)";
+                     LoginForm.style.transform = "translateX(0px)";
+                     Indicator.style.transform = "translateX(100px)";
+                                        
+                 }
+            
+                 function login(){
+                     RegForm.style.transform = "translateX(300px)";
+                     LoginForm.style.transform = "translateX(300px)";
+                     Indicator.style.transform = "translateX(0px)";
+                                        
+                 }
+            
+        
+        
+        </script>
+        
+        
+    </body>
+</html>
